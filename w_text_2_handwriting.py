@@ -5,7 +5,7 @@ sheet_width=BG.width
 gap, ht = 0, 0
 
 for i in txt.read().replace("\n",""):
-        cases = Image.open("myfont/{}.png".format(str(ord(i))))
+        cases = Image.open(f"myfont/{str(ord(i))}.png")
         BG.paste(cases, (gap, ht))
         size = cases.width
         height=cases.height
